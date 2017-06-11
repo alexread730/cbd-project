@@ -7,15 +7,11 @@ $(document).ready(function() {
    navigator.geolocation.getCurrentPosition(function(location) {
      latitude = location.coords.latitude
      longitude = location.coords.longitude
-     console.log(location.coords.latitude);
-     console.log(location.coords.longitude);
-     console.log(location.coords.accuracy);
    });
 
      $.getJSON(`https://api.weather.com/v1/geocode/${latitude}/${longitude}/forecast/daily/5day.json?language=en-US&units=e&apiKey=f43934a981fc48f5926e5929d3ee0760`)
       .then(function(response) {
         let forecastsArray = response.forecasts;
-        console.log(forecastsArray);
 
         for (var i = 1; i < forecastsArray.length; i++) {
           let moonPhase = response.forecasts[i].lunar_phase;
@@ -25,8 +21,7 @@ $(document).ready(function() {
           let day = forecastsArray[i].dow;
           let moonLunacy = 0;
           let tempLunacy = 0;
-
-
+          
           getMoonLunacy(phaseDay);
           getTempLunacy(temperature);
 
@@ -68,15 +63,10 @@ $(document).ready(function() {
               tempLunacy = 100;
             }
           }
-
           $(`.day${i}`).text(`${day}: ${lunacyIndex}%`);
-
         }
         $('.forecast-section').hide();
         $('.forecast-section').fadeIn(2000);
-
-        console.log(longitude);
-        console.log(latitude);
 
       })
 })

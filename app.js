@@ -67,15 +67,13 @@ $(document).ready(function() {
         }
 
         $('.moon-phase').text(` Moon Phase: ${moonPhase}`);
-        $('.temperature').text(` Max Temperature: ${temperature}`);
+        $('.temperature').text(` Max Temperature: ${temperature}ºF`);
         $('.phase-day').text(` Phase Day: ${phaseDay}`);
         $('.humidity').text(` Humidity: ${humidityLunacy}%`)
         $('.lunacy-index').text(`${lunacyIndex}%`);
         $('.lunacy-index').css('opacity','1');
         $('.lunacy-index').hide();
         $('.lunacy-index').fadeIn(2000);
-
-        console.log(phaseDay);
 
       })
    })

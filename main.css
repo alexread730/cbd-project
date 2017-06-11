@@ -12,7 +12,7 @@ body {
 }
 
 .weather {
-  margin-top: 250px;
+  margin-top: 225px;
   color: white;
   font-size: 1.5em;
   text-shadow: 0 0 3em white, 0 0 0.2em white,
@@ -24,14 +24,14 @@ body {
 }
 
 .title {
-  margin-left: 50px;
+  margin-left: 40px;
   color: white;
   text-shadow: 0 0 3em white, 0 0 0.2em white,
         0 0 0.2em white;
 }
 
 .lunacy-index {
-  margin-left: 60px;
+  margin-left: 50px;
   color: white;
   text-shadow: 0 0 3em white, 0 0 0.2em white,
         0 0 0.2em white;
@@ -47,7 +47,17 @@ body {
   border: 1px solid white;
   border-radius: 5px;
 }
-/*
+
+.back-home {
+  margin-left: 20px;
+  text-shadow: 0 0 3em white, 0 0 0.2em white,
+        0 0 0.2em white;
+}
+
 .forecast-section {
-  background-color: black;
-}*/
+  border-radius: 5px;
+  margin-left: 5px;
+  text-shadow: 0 0 3em white, 0 0 0.2em white,
+        0 0 0.2em white;
+  font-size: 1.5em;
+}
