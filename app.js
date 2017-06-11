@@ -10,9 +10,6 @@ $(document).ready(function() {
    navigator.geolocation.getCurrentPosition(function(location) {
      latitude = location.coords.latitude
      longitude = location.coords.longitude
-     console.log(location.coords.latitude);
-     console.log(location.coords.longitude);
-     console.log(location.coords.accuracy);
    });
 
 
@@ -69,21 +66,16 @@ $(document).ready(function() {
           }
         }
 
-        $('.moon-phase').text(`Moon Phase: ${moonPhase}`);
-        $('.temperature').text(`Max Temperature: ${temperature}`);
-        $('.phase-day').text(`Phase Day: ${phaseDay}`);
-        $('.humidity').text(`Humidity: ${humidityLunacy}%`)
+        $('.moon-phase').text(` Moon Phase: ${moonPhase}`);
+        $('.temperature').text(` Max Temperature: ${temperature}`);
+        $('.phase-day').text(` Phase Day: ${phaseDay}`);
+        $('.humidity').text(` Humidity: ${humidityLunacy}%`)
         $('.lunacy-index').text(`${lunacyIndex}%`);
         $('.lunacy-index').css('opacity','1');
         $('.lunacy-index').hide();
         $('.lunacy-index').fadeIn(2000);
 
-
-        console.log(humidityLunacy);
-        console.log(tempLunacy);
-        console.log(moonLunacy);
-        console.log(longitude);
-        console.log(latitude);
+        console.log(phaseDay);
 
       })
    })
