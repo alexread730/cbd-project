@@ -24,16 +24,30 @@ body {
 }
 
 .title {
-  margin-left: 300px;
+  margin-left: 50px;
   color: white;
   text-shadow: 0 0 3em white, 0 0 0.2em white,
         0 0 0.2em white;
-  border-color: white;
 }
 
 .lunacy-index {
-  margin-left: 120px;
+  margin-left: 60px;
   color: white;
   text-shadow: 0 0 3em white, 0 0 0.2em white,
         0 0 0.2em white;
+  opacity: 0;
 }
+
+.modal {
+  color: white;
+}
+
+
+.btn {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+/*
+.forecast-section {
+  background-color: black;
+}*/
