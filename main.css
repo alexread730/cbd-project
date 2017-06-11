@@ -1,0 +1,39 @@
+body {
+  /*background-color: white;*/
+  background-image: url('/img/lunacy-background2.png');
+  background-color: black;
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.phase-day {
+  margin-left: 25px;
+}
+
+.weather {
+  margin-top: 250px;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 0 0 3em white, 0 0 0.2em white,
+        0 0 0.2em white;
+}
+
+.modal-wrapper {
+  margin-top: 20px;
+}
+
+.title {
+  margin-left: 300px;
+  color: white;
+  text-shadow: 0 0 3em white, 0 0 0.2em white,
+        0 0 0.2em white;
+  border-color: white;
+}
+
+.lunacy-index {
+  margin-left: 120px;
+  color: white;
+  text-shadow: 0 0 3em white, 0 0 0.2em white,
+        0 0 0.2em white;
+}
